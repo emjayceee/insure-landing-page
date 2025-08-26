@@ -68,11 +68,10 @@ ul a:last-child {
 .upper-right {
     background-image: url(images\bg-pattern-intro-right-desktop.svg);
     position:absolute;
-    right: -40px;
-    top: -20px;
+    right: 0;
+    top: -50px;
     width: 20%;
     z-index: 1;
-    overflow: hidden;
 }
 
 .middle-left {
@@ -103,7 +102,7 @@ ul a:last-child {
     margin: 0;
     padding: 30px 0 30px 60px;
     width: 50%;
-    
+    z-index: 2;
 }
 
 
@@ -153,7 +152,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 60px 30px 30px 90px;
+    padding: 60px 30px 150px 90px;
 }
 .line2 {
     width: 140px;
@@ -237,4 +236,94 @@ button {
     right: 90px;
     width:25%;
     height:180px;
+}
+
+/* third content including social link imgs then footer*/
+
+.footer-logo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.insure-social-links {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray50);
+}
+
+.insure-logo-bottom, .social-links {
+    padding: 90px 90px 30px 90px;
+    z-index: 2;
+}
+
+.social-links img {
+    margin: 5px;
+}
+
+.border-design {
+    width: 88%;
+    color: var(--blue950);
+    border-top: solid 1px;
+    /* background-color: var(--gray50); */
+}
+
+/* -- */
+
+.lower-left {
+    position: absolute;
+    background-image: url(images\bg-pattern-footer-desktop.svg);
+    left: 0;
+    top: 0;
+    width: 35%;
+    height:auto;
+    z-index: 1;
+}
+
+.about-details {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray50);
+    width: 100%;
+    height: auto;
+    padding: 0 90px 30px 90px;
+    justify-content:flex-start;
+    gap: 240px;
+}
+
+
+.about-links span, 
+.faq-links span, 
+.contact-links span, 
+.others-links span {
+    padding: 40px 0;
+    display: inline-block;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray700);
+    text-transform: uppercase;
+}
+
+.about-details div {
+    z-index: 2; /* design pattern behind text */
+}
+
+.about-links a, 
+.faq-links a, 
+.contact-links a, 
+.others-links a {
+    display:block;
+    padding-bottom: 10px;
+    font-family: "Karla", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray950);
 }
